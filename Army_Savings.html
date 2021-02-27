@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Army_Savings</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+  <p>public class MyClass {
+      <p>public static void main(String args[]) {
+<p>
+          <br>double firstprincipal=Double.parseDouble(args[0]);
+          <br>double secondprincipal=Double.parseDouble(args[1]);
+          <br>double month=Double.parseDouble(args[2]);
+          <br>double monthLast=Double.parseDouble(args[3]);
+          <br>double interest_rate=Double.parseDouble(args[4]);
+          <br>double BankAccountBalance=Double.parseDouble(args[5]);
+<br>
+          <br>System.out.println("First Principal :"+firstprincipal);
+          <br>System.out.println("Second principal :"+secondprincipal);
+          <br>System.out.println("Month :"+month);
+          <br>System.out.println("Last Month :"+monthLast);
+          <br>System.out.println("Interest Rate :"+interest_rate);
+          <br>System.out.println("Bank Account Balance :"+BankAccountBalance);
+<br>
+          <br>double total_principal = firstprincipal*month + secondprincipal*(month-monthLast);
+          <br>double total_interest_rate = total_principal * interest_rate * 1/100;
+          <br>double total_money = total_principal + total_interest_rate + BankAccountBalance;
+<br>
+
+          <br>System.out.println("Total Principal is :"+total_principal);
+          <br>System.out.println("Total Interest Rate is :"+total_interest_rate);
+          <br>System.out.println("I can got total money is :"+total_money);
+</p>
+      }</p>
+  }</p>
+</body>
+</html>
