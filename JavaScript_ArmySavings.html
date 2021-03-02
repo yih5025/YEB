@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript_ArmySavings</title>
+  </head>
+  <body>
+  <h1><a href="index.html">index</a></h1>
+   <input id="night_day" type="button" value="night" onclick="
+   var target = document.querySelector('body');
+   if(this.value==='night'){
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value='day';
+   }
+   else{
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value='night';
+   }
+   ">
+   <br></br>
+   <input type="button" name="FirstPrincipal" value="FirstPrincipal">
+   <input id='name1' onchange='printName1()'/>
+   <div id='result1'></div>
+   <script>
+    function printName1()  {
+   const name1 = document.getElementById('name1').value;
+   document.getElementById("result1").innerText = name1;
+  }
+   </script>
+   <input type="button" name="SceondPrincipal" value="SecondPrincipal">
+   <input id='name2' onchange='printName2()'/>
+   <div id='result2'></div>
+   <script>
+    function printName2()  {
+   const name = document.getElementById('name2').value;
+   document.getElementById("result2").innerText = name;
+  }
+   </script>
+   <input type="button" name="Month" value="Month">
+   <input id='name3' onchange='printName3()'/>
+   <div id='result3'></div>
+   <script>
+    function printName3()  {
+   const name = document.getElementById('name3').value;
+   document.getElementById("result3").innerText = name;
+  }
+   </script>
+   <input type="button" name="LastMonth" value="LastMonth">
+   <input id='name4' onchange='printName4()'/>
+   <div id='result4'></div>
+   <script>
+    function printName4()  {
+   const name = document.getElementById('name4').value;
+   document.getElementById("result4").innerText = name;
+  }
+   </script>
+   <input type="button" name="InterestRate" value="InterestRate">
+   <input id='name5' onchange='printName5()'/>
+   <div id='result5'></div>
+   <script>
+    function printName5()  {
+   const name = document.getElementById('name5').value;
+   document.getElementById("result5").innerText = name;
+  }
+   </script>
+   <input type="button" name="BankAccountBalance" value="BankAccountBalance">
+   <input id='name6' onchange='printName6()'/>
+   <div id='result6'></div>
+   <script>
+    function printName6()  {
+   const name = document.getElementById('name6').value;
+   document.getElementById("result6").innerText = name;
+  }
+   </script>
+   <h1>your total money: </h1>
+   <script>
+    result1*result3 - result2*(result3-result4);
+
+   </script>
+
+  </body>
+</html>
