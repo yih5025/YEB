@@ -6,19 +6,34 @@
   </head>
   <body>
   <h1><a href="index.html">index</a></h1>
-   <input id="night_day" type="button" value="night" onclick="
-   var target = document.querySelector('body');
-   if(this.value==='night'){
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    this.value='day';
-   }
-   else{
-    target.style.backgroundColor='white';
-    target.style.color='black';
-    this.value='night';
-   }
-   ">
+   <input id="night_day" type="button" value="night" onclick="DarkMode()">
+   <script>
+     function DarkMode(){
+       var target = document.querySelector('body');
+       if(this.value==='night'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        this.value='day';
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+         alist[i].style.color = 'red';
+         i = i + 1;
+         }
+       }
+       else{
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        this.value='night';
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+         alist[i].style.color = 'blue';
+         i = i + 1;
+         }
+       }
+     }
+   </script>
    <br></br>
    <input type="button" name="FirstPrincipal" value="FirstPrincipal">
    <input id='name1' onchange='printName1()'/>
@@ -34,7 +49,7 @@
    <div id='result2'></div>
    <script>
     function printName2()  {
-   const name = document.getElementById('name2').value;
+   const name2 = document.getElementById('name2').value;
    document.getElementById("result2").innerText = name;
   }
    </script>
@@ -43,7 +58,7 @@
    <div id='result3'></div>
    <script>
     function printName3()  {
-   const name = document.getElementById('name3').value;
+   const name3 = document.getElementById('name3').value;
    document.getElementById("result3").innerText = name;
   }
    </script>
@@ -52,7 +67,7 @@
    <div id='result4'></div>
    <script>
     function printName4()  {
-   const name = document.getElementById('name4').value;
+   const name4 = document.getElementById('name4').value;
    document.getElementById("result4").innerText = name;
   }
    </script>
@@ -61,7 +76,7 @@
    <div id='result5'></div>
    <script>
     function printName5()  {
-   const name = document.getElementById('name5').value;
+   const name5 = document.getElementById('name5').value;
    document.getElementById("result5").innerText = name;
   }
    </script>
@@ -70,15 +85,19 @@
    <div id='result6'></div>
    <script>
     function printName6()  {
-   const name = document.getElementById('name6').value;
+   const name6 = document.getElementById('name6').value;
    document.getElementById("result6").innerText = name;
   }
    </script>
    <h1>your total money: </h1>
-   <script>
-    result1*result3 - result2*(result3-result4);
+   <input type="button" value="CountMoney" onclick="name1.toString()">
 
-   </script>
+     <script>
 
+       function CountMoney(){
+         window.alert(name1);
+       }
+
+     </script>
   </body>
 </html>

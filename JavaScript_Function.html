@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><a href="index.html">index.html</a></h1>
+    <h1>Parameter & Argument</h1>
+    <script>
+      function sum(left, right){
+        document.write(left+right+'<br>');
+      }
+      sum(100, 23);
+    </script>
+    <script>
+      function SumRed(left, right){
+        document.write('<div style="color:red">'
+          +(left+right)+
+        '</div>')
+      }
+      SumRed(2, 8);
+    </script>
+    <h2>Return</h2>
+    <script>
+      function sumreturn(left, right){
+        return left+right;
+      }
+      document.write(sumreturn(110, 44)+'<br>');
+      document.write('<div style = "color:blue">'
+        +sumreturn(100, 45)+
+      '</div>');
+      document.write('<div style = "font-size:4rem;">'
+        +sumreturn(100, 45)+
+      '</div>');
+    </script>
+  </body>
+</html>
