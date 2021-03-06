@@ -3,37 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>JavaScript_ArmySavings</title>
+    <script>
+      var Body = {
+        setColor:function(color){
+          document.querySelector('body').style.color=color;
+        },
+        setBackColor:function(color){
+          document.querySelector('body').style.backgroundColor=color;
+        }
+      }
+      var Links = {
+        setColor:function(color){
+          var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i < alist.length){
+           alist[i].style.color = color;
+           i = i + 1;
+         }
+        }
+      }
+      function DarkMode(self){
+        var target = document.querySelector('body');
+        if(self.value==='night'){
+         Body.setBackColor('black');
+         Body.setColor('white');
+         self.value='day';
+         Links.setColor('red');
+          }
+        else{
+         Body.setBackColor('white');
+         Body.setColor('black ');
+         self.value='night';
+         Links.setColor('blue');
+          }
+        }
+    </script>
   </head>
   <body>
   <h1><a href="index.html">index</a></h1>
-   <input id="night_day" type="button" value="night" onclick="DarkMode()">
-   <script>
-     function DarkMode(){
-       var target = document.querySelector('body');
-       if(this.value==='night'){
-        target.style.backgroundColor='black';
-        target.style.color='white';
-        this.value='day';
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-         alist[i].style.color = 'red';
-         i = i + 1;
-         }
-       }
-       else{
-        target.style.backgroundColor='white';
-        target.style.color='black';
-        this.value='night';
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-         alist[i].style.color = 'blue';
-         i = i + 1;
-         }
-       }
-     }
-   </script>
+   <input id="night_day" type="button" value="night" onclick="DarkMode(this)">
    <br></br>
    <input type="button" name="FirstPrincipal" value="FirstPrincipal">
    <input id='name1' onchange='printName1()'/>

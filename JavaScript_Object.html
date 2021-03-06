@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript_Object</title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var vagetables = {
+        "good":"onion",
+        "bad":"carots"
+      };
+      document.write("good vagetables:"+vagetables.good+"<br>");
+      document.write("bad vagetables:"+vagetables.bad+"<br>");
+      vagetables.normal = "galic";
+      document.write("normal vagetables:"+vagetables.normal+"<br>");
+      vagetables["cutting tools"] = "knife";
+      document.write("vagetables cutting tools:"+vagetables["cutting tools"]+"<br>");
+    </script>
+    <h2>Object values</h2>
+    <script>
+      document.write(Object.values(vagetables));
+    </script>
+    <h2>Iterate</h2>
+    <script>
+      for(dick in vagetables){
+        document.write(dick+':'+vagetables[dick]+'<br>');
+      }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+      vagetables.showAll = function(){
+        for(dick in this){
+          if(dick!=="showAll")
+            document.write(dick+':'+this[dick]+'<br>');
+        }
+      }
+      vagetables.showAll();
+    </script>
+  </body>
+</html>
