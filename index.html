@@ -1,47 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Army_Savings</title>
-<meta charset="utf-8">
-</head>
-
-<body>
-  <p>public class MyClass {
-      <p>public static void main(String args[]) {
-<p>
-          <br>double firstprincipal=Double.parseDouble(args[0]);
-          <br>double secondprincipal=Double.parseDouble(args[1]);
-          <br>double month=Double.parseDouble(args[2]);
-          <br>double monthLast=Double.parseDouble(args[3]);
-          <br>double interest_rate=Double.parseDouble(args[4]);
-          <br>double BankAccountBalance=Double.parseDouble(args[5]);
-<br>
-          <br>System.out.println("First Principal :"+firstprincipal);
-          <br>System.out.println("Second principal :"+secondprincipal);
-          <br>System.out.println("Month :"+month);
-          <br>System.out.println("Last Month :"+monthLast);
-          <br>System.out.println("Interest Rate :"+interest_rate);
-          <br>System.out.println("Bank Account Balance :"+BankAccountBalance);
-<br>
-          <br>double total_principal = firstprincipal*month + secondprincipal*(month-monthLast);
-          <br>double total_interest_rate = total_principal * interest_rate * 1/100;
-          <br>double total_money = total_principal + total_interest_rate + BankAccountBalance;
-<br>
-
-          <br>System.out.println("Total Principal is :"+total_principal);
-          <br>System.out.println("Total Interest Rate is :"+total_interest_rate);
-          <br>System.out.println("I can got total money is :"+total_money);
-</p>
-      }</p>
-  }</p>
-  <ul>
-  <li><h1><a href="JavaScriptUnderStading.html">JavaScriptUnderStading.html</a></h1></li>
-  <li><h1><a href="JavaScriptUnderStanding_Js.html">JavaScriptUnderStanding_Js.html</a></h1></li>
-  <li><h1><a href="JavaScript_ArmySavings.html">JavaScript_ArmySavings</a></h1></li>
-  <li><h1><a href="JavaScript_ArrayBasic.html">JavaScript_ArrayBasic</a></h1></li>
-  <li><h1><a href="JavaScript_Function.html">JavaScript_Function</a></h1></li>
-  <li><h1><a href="JavaScript_Object.html">JavaScript_Object</a></h1></li>
-  <li><h1><a href="HelloGram.html">HelloGram</a></h1></li>
-</ul>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+      header{
+        border-bottom:1px solid gray;
+        text-align: center;
+      }
+      footer{
+        border-top:1px solid gray;
+        text-align: center;
+        padding: 20px;
+      }
+      .content{
+        display: flex;
+      }
+      .content nav{
+        border-right:1px solid gray;
+      }
+      .content aside{
+        border-left:1px solid gray;
+      }
+      nav, aside{
+        flex-basis:150px;
+        flex-shrink:0;
+      }
+      main{
+        min-width: 80%;
+      }
+      nav{
+          font-family: Copperplate, Papyrus, fantasy;
+          color: #7c8ee2;
+      }
+      a{
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>YEB</h1>
+      </header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li><a href="index.html">YEB</a></li>
+            <li>Army Savings</li>
+            <li><a href="HelloGram.html">HelloGram</li>
+            <li><a href="JavaScriptUnderStading.html">JavaScriptUnderStading.html</a></li>
+            <li><a href="JavaScriptUnderStanding_Js.html">JavaScriptUnderStanding_Js.html</a></li>
+            <li><a href="JavaScript_ArrayBasic.html">JavaScript_ArrayBasic</a></li>
+            <li><a href="JavaScript_Function.html">JavaScript_Function</a></li>
+            <li><a href="JavaScript_Object.html">JavaScript_Object</a></li>
+          </ul>
+        </nav>
+        <main>
+          일한쓰 웹 사이트 제작기, 군대 사지방에서 만드는 우여곡절 좌충우돌 html css JavaScript 제작!
+        </main>
+        <aside class="AD">
+          광고주분들 연락주세요
+        </aside>
+      </section>
+      <footer>
+        design in 싸지방
+      </footer>
+    </div>
+  </body>
 </html>
