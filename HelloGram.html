@@ -1,95 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title></title>
-    <style media="screen">
-      .sign{
-        text-align: center;
-        border: solid 5px black;
-        font-size: 70px;
-        padding: 20px;
-        margin: auto;
-        width: 90%;
+    <style>
+      .container{
+        display: flex;
+        flex-direction:column;
+      }
+      .content{
+        display: flex;
+      }
+      .content nav{
+        display: flex;
+        flex-direction: row;
+      }
+      nav, aside{
+        flex-basis: 200px;
+        flex-shrink: 0;
+      }
+      header{
         color: #eca53d;
         background-color:#e11c81;
         text-shadow: 5px 1px 2px #801dcd;
+        font-size: 70px;
       }
-      nav .navgation{
-        text-align: center;
-        border: solid 5px black;
-        width: auto;
-        padding: 20px;
+      nav{
         font-size: 35px;
         background-color: #ed5b9b;
         color: #7c8ee2;
         font-family: Copperplate, Papyrus, fantasy;
         text-shadow: 3px 3px #5c1e91;
-        margin-left: 2%;
-        margin-right: 2%;
       }
-      h1 a{
-        text-decoration:none;
-      }
-      ul li{
-        list-style: none;
-        display: inline;
-        margin: 20px;
-      }
-      ul{
-        margin: auto;
-        padding-left: 0px;
-      }
-      main .content{
-         float: left;
-         border: solid 2px black;
-         width: 65%;
-         height: 1000px;
-      }
-      main .sidebarLeft{
-        float:left;
-        border: solid 2px black;
-        width: 15%;
-        height: 1000px;
-        margin-left: 2%;
-        background-color: #ed5b9b;
-      }
-      main .sidebarRight{
-        float:left;
-        border: solid 2px black;
-        width: 15%;
-        height: 1000px;
-        margin-right: 2%;
-        background-color: #ed5b9b;
+      footer{
+        text-align: center;
+        padding: 20px;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>
-        <a href="HelloGram.html"><div class="sign">HelloGram</div></a>
-      </h1>
-    </header>
-    <nav>
-      <div class="navgation">
-        <ul>
-          <li><span>Home</span></li>
-          <li><span>picture</span></li>
-          <li><span>search</span></li>
-          <li><span>people</span></li>
-          <li><span>my</span></li>
-        </ul>
-    </nav>
-    <main>
-      <aside class="sidebarLeft">
-        aside
-      </aside>
-      <div class="content">
-        content
-      </div>
-      <aside class="sidebarRight">
-        aside
-      </aside>
-    </main>
+    <div class="container">
+      <header>
+        HelloGram
+      </header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li>HOME</li>
+            <li>Search</li>
+            <li>People</li>
+            <li>Picture</li>
+            <li>My</li>
+          </ul>
+        </nav>
+        <main>
+          main
+        </main>
+        <aside class="AD">
+          ad
+        </aside>
+      </section>
+      <footer>Hello</footer>
+    </div>
   </body>
 </html>

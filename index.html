@@ -7,6 +7,7 @@
       .container{
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
       }
       header{
         border-bottom:1px solid gray;
@@ -19,6 +20,7 @@
       }
       .content{
         display: flex;
+        flex: 1;
       }
       .content nav{
         border-right:1px solid gray;
@@ -32,6 +34,7 @@
       }
       main{
         min-width: 80%;
+        flex:1 1 300px;
       }
       nav{
           font-family: Copperplate, Papyrus, fantasy;
@@ -39,6 +42,9 @@
       }
       a{
         text-decoration: none;
+      }
+      ul{
+        list-style: none;
       }
     </style>
   </head>
@@ -62,6 +68,7 @@
         </nav>
         <main>
           일한쓰 웹 사이트 제작기, 군대 사지방에서 만드는 우여곡절 좌충우돌 html css JavaScript 제작!
+
         </main>
         <aside class="AD">
           광고주분들 연락주세요
