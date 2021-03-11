@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ArmySavings</title>
+    <style>
+      *{
+        box-sizing:border-box;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+      header{
+        border: 1px solid green;
+        font-size:90px;
+        padding: 20px;
+        padding-left: 40px;
+        background-image: url("coin.png");
+        background-size: 150px;
+      }
+      header span:nth-child(1){
+        color:#008c43;
+      }
+      header span:nth-child(2){
+        color:#fdba13;
+      }
+      .content{
+        display:flex;
+      }
+      nav, .AD{
+        border:1px solid green;
+        flex: 0 0 200px;
+      }
+      main{
+        border:1px solid green;
+      }
+      footer{
+        border:1px solid green;
+        text-align: center;
+        padding:20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span>Army</span><span>Savings</span>
+      </header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li>적금</li>
+            <li>예금</li>
+            <li>출금</li>
+          </ul>
+        </nav>
+        <main>
+          <form class="form-money" action="" method="post">
+            <p>첫번째 적금 금액:<input type="number" name="first-money"></p>
+            <p>두번째 적금 금액:<input type="number" name="second-monry"></p>
+            <p><input type="submit"></p>
+          </form>
+        </main>
+        <aside class="AD">
+          Ad
+        </aside>
+      </section>
+      <footer>
+        @copyright
+      </footer>
+      </div>
+  </body>
+</html>
