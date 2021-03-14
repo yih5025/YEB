@@ -47,6 +47,7 @@
         flex:1;
         font-family:cursive;
         font-size: 30px;
+        padding-top:40px;
       }
       p span:nth-child(1){
         color:#008c43;
@@ -61,6 +62,30 @@
         border:1px solid green;
         text-align: center;
         padding:20px;
+      }
+      @media(max-width:1200px)
+      {
+        .content{
+          display: flex;
+          flex-direction: column;
+        }
+        header{
+          font-size: 90px;
+          padding-left: 0;
+          padding-right: 0;
+          text-align:center;
+        }
+        nav ul{
+          display:flex;
+          flex-direction: rows;flex-wrap: wrap;
+          justify-content: space-around;
+          align-content: space-around;
+          padding-right:40px;
+        }
+        nav, .AD{
+          flex: 50px;
+          font-size: 30px;
+        }
       }
 
     </style>
@@ -86,7 +111,7 @@
             <p><span>Second</span> <span>saving</span> <span>month</span> <input type="number" name="second-month"></p>
             <p><span>Interest</span> <span>rate</span> <input type="number" name="interest-rate" value=""></p>
             <p><span>Bank</span> <span>balance</span> <input type="number" name="bank-balance" value=""></p>
-            <p><button type="button" class="btn btn-success">Success</button></p>
+            <p><button type="button" class="btn btn-success">Submit</button></p>
           </form>
         </main>
         <aside class="AD">
