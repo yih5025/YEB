@@ -1,0 +1,129 @@
+
+body{
+  background-image: url(../../images/bg.jpg);
+  background-size: cover;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+#wrapper{
+  max-width: 68em;
+  margin: 0.5rem auto;
+  padding: 0 2em;
+}
+#header .avatar img{
+  border-radius: 100%;
+  display: block;
+}
+#header .avatar{
+  border-radius: 100%;
+  display: inline-block;
+  padding: 0.5rem;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.075);
+  margin: 0 0 2rem 0;
+}
+#header{
+  text-align: center;
+  padding: 6em 0 4em 0;
+}
+#header h1{
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 200;
+  margin: 0 0 1rem 0;
+  line-height: 2.5rem;
+}
+#header h1 strong{
+  color: white;
+  font-weight: 200;
+}
+
+#header h1 a{
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.65);
+}
+
+#header ul.icons{
+  padding-left: 0;
+  margin: 0 0 2em 0;
+}
+#header ul.icons li{
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.075);
+  border-radius: 100%;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+#header ul.icons li:hover{
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#header ul.icons li a{
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+
+}
+#header ul.icons li .label{
+  display: none;
+}
+#main .thumbnails{
+  display: flex;
+
+}
+#main .thumbnails > div{
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 0 0 2rem;
+}
+#main .thumbnails img{
+  width: 100%;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius:0.2rem;
+  display: block;
+}
+#main .thumbnails h3{
+  border-left:  1px solid rgba(255, 255, 255, 0.3);
+  border-right:  1px solid rgba(255, 255, 255, 0.3);
+  border-bottom:  1px solid rgba(255, 255, 255, 0.3);
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+#main .thumbnails a{
+  display: block;
+  margin-bottom: 2rem;
+}
+#footer{
+  text-align: center;
+  padding: 4em 0 4em 0;
+}
+#footer:before{
+  content: '';
+  display: block;
+  width: 10rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 0 auto 3em auto;
+}
+#footer p{
+  margin: 0 0 2em 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.8rem;
+}
+#footer p a{
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.65);
+  font-weight: 200;
+}
+@media(max-width:500px){
+  #main .thumbnails{
+    display: block;
+  }
+}
